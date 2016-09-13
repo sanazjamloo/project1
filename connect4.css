@@ -1,0 +1,25 @@
+body {
+  background-color: ivory;
+}
+
+#container {
+  margin: 10px auto 6px;
+  width: 700px;
+  position:relative;
+}
+
+#board-wrapper {
+  background-color: white;
+  border: 1px solid black;
+}
+div.row_wrapper {
+  height: 104px;
+}
+
+div.row-wrapper div{
+  width:100px;
+  height: 100px;
+  border: 1px solid black;
+  float:left;
+
+}
