@@ -1,25 +1,39 @@
 body {
-  background-color: ivory;
+  background-image: url('Halloween4.png');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
+/*#bg {
+  position:fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}*/
+
+
 #container {
-  margin: 10px auto 6px;
-  width: 700px;
+  margin: 8px auto 6px;
+  width: 732px;
   position:relative;
+  padding-top: 80px;
 }
 
 #board-wrapper {
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid black;
+  height: 624px;
 }
+
 div.row_wrapper {
   height: 104px;
 }
 
-div.row-wrapper div{
+div.row-wrapper div {
   width:100px;
   height: 100px;
-  border: 1px solid black;
+  border: 2px solid black;
   float:left;
-
 }
