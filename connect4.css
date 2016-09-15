@@ -1,9 +1,9 @@
-body {
+/*body {
   background-image: url('Halloween4.png');
-  background-size: cover;
+  background-size: contain;
   margin: 0;
   padding: 0;
-}
+}*/
 
 /*#bg {
   position:fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 #board-wrapper {
-  background-color: white;
+  background-color: rgba(218,200,187,0.5);
   border: 2px solid black;
   height: 624px;
 }
