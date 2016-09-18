@@ -3,9 +3,11 @@ $(function() {
 
 
 var canvas = document.getElementsByTagName('canvas');
-var red = 'rgba(229,96,90,1)';
-var blue = 'rgba(84,91,173,1)';
+var red = 'rgba(229,96,90,0.9)';
+var blue = 'rgba(84,91,173,0.9)';
 turn = 1;
+
+
 
 var Board=[
   [0,0,0,0,0,0,0],
@@ -15,6 +17,7 @@ var Board=[
   [0,0,0,0,0,0,0],
   [0,0,0,0,0,0,0]
 ];
+
 function createToken(){
   token = canvas[canvasNumber].getContext('2d');
   //alert('token clicked' + canvasClicked+token);
@@ -22,26 +25,23 @@ function createToken(){
   token.arc(50, 50, 45, 0, 2 * Math.PI, false);
   if(turn==1){
     token.fillStyle = red;
-
   } else{
     token.fillStyle = blue;
-
   }
-
   token.fill();
 }
 
 $('.token-box').click(function() {
   if (turn>0){      //checks if the game is not over
     canvasClicked = $(this).children('canvas').attr('id');
-    column=8-((canvasClicked-1)%7+1);    //subtract 1 before getting remainder else last row would be 0, subtract from 8 because we want the column number to start from right
-    row=7-(Math.floor((canvasClicked-1)/7)+1);     //subtract from 7 because we want row number to start from bottom whereas id's start from top
+    column = 8-((canvasClicked-1)%7+1);    //subtract 1 before getting remainder else last row would be 0, subtract from 8 because we want the column number to start from right
+    row = 7-(Math.floor((canvasClicked-1)/7)+1);     //subtract from 7 because we want row number to start from bottom whereas id's start from top
     console.log(canvasClicked+' row:'+row+'column:'+column+ ' it is '+ turn+' turn');
 
     canvasNumber = canvasClicked-1;                //because canvas array starts at 0
 
     if(row==1 && Board[row-1][column-1]==0){      //check if the first row is empty and check if the cell is empty
-      Board[row-1][column-1]=turn;                //set cell value to players turn
+      Board[row-1][column-1] = turn;                //set cell value to players turn
       createToken();                              // i dont know why my alert pops up before the token is dropped when there is a winner!
       if (findFourHorizontal()>0 || findFourVertical()>0){    //functions return 1 if they find four connected token
         alert('Player ' + turn + ' is the winner!');
@@ -75,7 +75,6 @@ function findFourVertical() {
 }
 
 function findFourHorizontal() {
-
   for(var i=0;i<7;i++){                    // checks columns
     for(var j=0;j<3;j++){                 // checks the ith column, there are only 3 possibilities
 
@@ -95,12 +94,20 @@ function changeTurn(){
     turn=1;
   }
 }
-function announceWinner() {
-
-}
-
-
+// function announceWinner() {
+//
+// }
 function gameOver() {
 turn=0;
 }
+
+function clearTheBoard() {
+  for(i=0; i < canvas.length; i++) {
+    createToken rgba(218,200,187,0.5);
+  }
+
+}
+
+
+
 });
