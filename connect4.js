@@ -101,13 +101,13 @@ function gameOver() {
 turn=0;
 }
 
-function clearTheBoard() {
-  for(i=0; i < canvas.length; i++) {
-    createToken rgba(218,200,187,0.5);
-  }
+// function clearBoard() {
+// alert('clear clicked!!!');
+// }
 
-}
+$("#clear").click(function(){
 
-
+location.reload();
+});
 
 });
