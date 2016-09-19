@@ -105,7 +105,7 @@ turn=0;
 // alert('clear clicked!!!');
 // }
 
-$("#clear").click(function(){
+$("#clear").click(function(){   // to clear the board
 
 location.reload();
 });
