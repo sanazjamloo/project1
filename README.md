@@ -1,4 +1,6 @@
-# project1
+ Project1 
+ 
+link to the live site :  https://sanazjamloo.github.io/project1/
 
 Connect4 project
 
