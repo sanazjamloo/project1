@@ -30,7 +30,7 @@ function createToken(){
 }
 
 $('.token-box').click(function() {
-  if (turn > 0){      //checks if the game is not over
+  if (turn > 0){      //check if the game is not over
     canvasClicked = $(this).children('canvas').attr('id');
     column = 8-((canvasClicked-1) % 7 + 1);    //subtract 1 before getting remainder otherwise last row would be 0,
     //subtract from 8 because we want the column number to start from right.
@@ -49,9 +49,9 @@ $('.token-box').click(function() {
         gameOver();
       }
       changeTurn();
-
     }else if (Board[row-2][column-1] > 0 && Board[row-1][column-1]== 0) {  // if we are not in the first row check if
       //the cell below is filled and this cell is empty.
+
       Board[row-1][column-1]=turn;         //set cell value to players turn
       createToken();                       // i dont know why my alert pops up before the token is dropped when there is a winner!
       if (findFourHorizontal() > 0 || findFourVertical() > 0){
@@ -66,7 +66,6 @@ $('.token-box').click(function() {
 
 //find 4 tokens connected vertically
 function findFourVertical() {
-
   for(var i = 0; i < 6; i++){   // checks all the rows
     for(var j=0; j < 4; j++){   // j checks the row, thre are only 4 possibilities.
   //console.log('i:'+i,'j:'+j);
@@ -83,8 +82,7 @@ function findFourVertical() {
 //find 4 tokens connected horizontally
 function findFourHorizontal() {
   for(var i = 0; i < 7; i++){      // checks columns
-    for(var j = 0; j < 3; j++){   // checks the ith column, there are only 3 possibilities
-
+    for(var j = 0; j < 3; j++){   // checks the ith column, there are only 3 possibilities.
       if((Board[j][i]==turn) &&
        (Board[j+1][i]==turn) &&
        (Board[j+2][i]==turn) &&
@@ -96,7 +94,6 @@ function findFourHorizontal() {
 }
 
 function changeTurn(){
-
   if (turn == 1){
     turn = 2;
   }
@@ -104,9 +101,7 @@ function changeTurn(){
     turn = 1;
   }
 }
-// function announceWinner() {
-//
-// }
+
 function gameOver() {
 turn = 0;
 }
