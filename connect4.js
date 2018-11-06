@@ -53,7 +53,7 @@ $('.token-box').click(function() {
       //the cell below is filled and this cell is empty.
 
       Board[row-1][column-1]=turn;         //set cell value to players turn
-      createToken();                       // i dont know why my alert pops up before the token is dropped when there is a winner!
+      createToken();                       
       if (findFourHorizontal() > 0 || findFourVertical() > 0){
         alert('Player ' + turn + ' is the winner!');
         gameOver();
