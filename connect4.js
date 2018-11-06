@@ -45,17 +45,17 @@ $('.token-box').click(function() {
       Board[row-1][column-1] = turn;                //set cell value to players turn.
       createToken();
       if (findFourHorizontal() > 0 || findFourVertical() > 0){    //functions return 1 if they find four connected token.
-        alert('Player ' + turn + ' is the winner!');
+          alert('Player ' + turn + ' is the winner!');
         gameOver();
       }
       changeTurn();
-    }else if (Board[row-2][column-1] > 0 && Board[row-1][column-1]== 0) {  // if we are not in the first row check if
+    } else if (Board[row-2][column-1] > 0 && Board[row-1][column-1]== 0) {  // if we are not in the first row check if
       //the cell below is filled and this cell is empty.
 
       Board[row-1][column-1]=turn;         //set cell value to players turn
       createToken();
-      if (findFourHorizontal() > 0 || findFourVertical() > 0){
-        alert('Player ' + turn + ' is the winner!');
+        if (findFourHorizontal() > 0 || findFourVertical() > 0){
+          alert('Player ' + turn + ' is the winner!');
         gameOver();
       }
       changeTurn();
