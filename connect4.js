@@ -43,7 +43,7 @@ $('.token-box').click(function() {
 
     if(row == 1 && Board[row-1][column-1] == 0){     //check if the first row and the cell is empty.
       Board[row-1][column-1] = turn;                //set cell value to players turn.
-      createToken();                              // i dont know why my alert pops up before the token is dropped when there is a winner!
+      createToken();
       if (findFourHorizontal() > 0 || findFourVertical() > 0){    //functions return 1 if they find four connected token.
         alert('Player ' + turn + ' is the winner!');
         gameOver();
@@ -53,7 +53,7 @@ $('.token-box').click(function() {
       //the cell below is filled and this cell is empty.
 
       Board[row-1][column-1]=turn;         //set cell value to players turn
-      createToken();                       
+      createToken();
       if (findFourHorizontal() > 0 || findFourVertical() > 0){
         alert('Player ' + turn + ' is the winner!');
         gameOver();
@@ -67,7 +67,7 @@ $('.token-box').click(function() {
 //find 4 tokens connected vertically
 function findFourVertical() {
   for(var i = 0; i < 6; i++){   // checks all the rows
-    for(var j=0; j < 4; j++){   // j checks the row, thre are only 4 possibilities.
+    for(var j= 0; j < 4; j++){   // j checks the row, thre are only 4 possibilities.
   //console.log('i:'+i,'j:'+j);
       if((Board[i][j]==turn) &&
       (Board[i][j+1]==turn) &&
