@@ -31,9 +31,9 @@ function createToken(){
 
 $('.token-box').click(function() {
   if (turn > 0){      //check if the game is not over
-    canvasClicked = $(this).children('canvas').attr('id');
-    column = 8-((canvasClicked-1) % 7 + 1);    //subtract 1 before getting remainder otherwise last row would be 0,
-    //subtract from 8 because we want the column number to start from right.
+      canvasClicked = $(this).children('canvas').attr('id');
+      column = 8-((canvasClicked-1) % 7 + 1);    //subtract 1 before getting remainder otherwise last row would be 0,
+      //subtract from 8 because we want the column number to start from right.
 
     row = 7-(Math.floor((canvasClicked-1) / 7) + 1);  //subtract from 7 because we want row number to start from bottom
     // whereas id's start from top.
