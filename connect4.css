@@ -1,17 +1,24 @@
 body {
   background-image: url('http://imgur.com/Tl2Db0W.png');
-  background-size: contain;
+  /* background-size: contain; */
   margin: 0;
   padding: 0;
 }
 
 h1 {
   font-family: 'Monoton', cursive;
+  font-size: 3em;
+  color: #d0251e;
 }
 
 .title {
-  width: 50%;
-
+  width: 19%;
+  text-align: center;
+  margin-left: 42%;
+  margin-top: 3%;
+  background-color: #f9f3ea;
+  border-radius: 25px;
+  border: #d0251e 2px dotted;
 }
 
 .token-box {
@@ -29,8 +36,8 @@ h1 {
 
 #board-wrapper {
   background-color: rgba(218,200,187,0.5);
-  border: 2px solid black;
-  height: 624px;
+  /* border: 2px solid black; */
+  /* height: 624px; */
 }
 
 div.row_wrapper {
@@ -40,6 +47,6 @@ div.row_wrapper {
 div.row-wrapper div {
   width:100px;
   height: 100px;
-  border: 2px solid black;
+  border: 1px solid #f9f3ea;
   float:left;
 }
