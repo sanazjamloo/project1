@@ -8,7 +8,7 @@ body {
 h1 {
   font-family: 'Monoton', cursive;
   font-size: 3em;
-  color: #d0251e;
+  color: #dc3545;
 }
 
 .title {
@@ -49,4 +49,17 @@ div.row-wrapper div {
   height: 100px;
   border: 1px solid #f9f3ea;
   float:left;
+}
+
+.btn btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+  margin-top: 5%;
+  margin-left: 50%;
+}
+
+#clear{
+  margin-top: 4%;
+  margin-left: 50%;
+  width: 45%;
 }
