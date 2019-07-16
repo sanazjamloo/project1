@@ -5,6 +5,11 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-family: 'Monoton', cursive;
+
+}
+
 .token-box {
   height: 100px;
   width: 100px;
