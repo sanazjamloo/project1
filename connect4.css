@@ -7,18 +7,13 @@ body {
 
 h1 {
   font-family: 'Monoton', cursive;
-  font-size: 3em;
-  color: #dc3545;
+  font-size: 4em;
+  color: #ffc107;
+  text-align: center;
 }
 
 .title {
-  width: 19%;
-  text-align: center;
-  margin-left: 42%;
   margin-top: 3%;
-  background-color: #f9f3ea;
-  border-radius: 25px;
-  border: #d0251e 2px dotted;
 }
 
 .token-box {
@@ -59,7 +54,8 @@ div.row-wrapper div {
 }
 
 #clear{
-  margin-top: 4%;
-  margin-left: 50%;
+  margin-top: 6%;
+  margin-left: 26%;
   width: 45%;
+  margin-bottom: 6%;
 }

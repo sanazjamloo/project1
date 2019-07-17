@@ -23,7 +23,7 @@ function createToken(){
   token.arc(50, 50, 45, 0, 2 * Math.PI, false);
   if(turn == 1){
     token.fillStyle = red;
-  } else{
+  } else {
     token.fillStyle = blue;
   }
   token.fill();
