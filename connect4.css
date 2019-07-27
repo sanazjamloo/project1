@@ -25,14 +25,7 @@ h1 {
 #container {
   margin: 8px auto 6px;
   width: 732px;
-  position:relative;
-  padding-top: 80px;
-}
-
-#board-wrapper {
-  background-color: rgba(218,200,187,0.5);
-  /* border: 2px solid black; */
-  /* height: 624px; */
+  padding-top: 25px;
 }
 
 div.row_wrapper {
@@ -63,6 +56,7 @@ div.row-wrapper div {
 }
 
 footer{
+  font-family: 'Poiret One', cursive;
   height: 3%;
   background-color: #3c2a35;
   color: #f0f0f0;
