@@ -11,7 +11,9 @@ The game ends either when the board is full (no more moves are possible) or when
 * Diagonal wins
 * Player vs. computer
 
-Play the game [here!](https://sanazjamloo.github.io/project1/)
-<a href="https://sanazjamloo.github.io/project1/" target="_blank">example</a> 
+Play the game
+<a href="https://sanazjamloo.github.io/project1/" target="_blank">here!</a>
 
 ###### Background image credit: www.dots.co/twodots
+
+<!-- [here!](https://sanazjamloo.github.io/project1/) -->
