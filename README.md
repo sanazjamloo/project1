@@ -13,5 +13,5 @@ The game ends either when the board is full (no more moves are possible) or when
 
 Play the game [here!](https://sanazjamloo.github.io/project1/)
 
-
+Thanks for visiting.  I hope you enjoy the game :)
 ###### Background image credit: www.dots.co/twodots
